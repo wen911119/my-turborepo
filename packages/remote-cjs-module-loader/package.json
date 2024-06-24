@@ -1,0 +1,40 @@
+{
+  "name": "@microfe/remote-cjs-module-loader",
+  "version": "0.0.0",
+  "description": "将远程commonjs的模块拉取到本地变成esModule.",
+  "sideEffects": false,
+  "keywords": [
+    "commonjs",
+    "unpkg",
+    "jsdelivr"
+  ],
+  "license": "ISC",
+  "source": "src/index.ts",
+  "exports": "./dist/remote-cjs-module-loader.modern.js",
+  "main": "./dist/remote-cjs-module-loader.js",
+  "module": "./dist/remote-cjs-module-loader.module.js",
+  "unpkg": "./dist/remote-cjs-module-loader.umd.js",
+  "directories": {
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -r dist & microbundle --sourcemap=false",
+    "dev": "microbundle watch",
+    "lint": "eslint . --max-warnings 0",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "eslint": "^8.57.0",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3",
+    "microbundle": "^0.15.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

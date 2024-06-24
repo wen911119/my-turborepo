@@ -29,7 +29,7 @@ export const Primary: Story = {
         alert("Hello from Turborepo!");
       }}
     >
-      Hello
+      Hello2
     </Button>
   ),
   name: "Button",
