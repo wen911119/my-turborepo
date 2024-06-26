@@ -1,0 +1,54 @@
+{
+  "name": "@microfe/react-remote-component",
+  "version": "0.0.0",
+  "description": "通过一个cdn的url(commonjs)，将远程react组件异步加载出来.",
+  "sideEffects": false,
+  "keywords": [
+    "react",
+    "unpkg",
+    "jsdelivr",
+    "Suspense",
+    "Lazy"
+  ],
+  "license": "ISC",
+  "source": "src/index.tsx",
+  "exports": {
+    "types": "./src/index.tsx",
+    "require": "./dist/react-remote-component.js",
+    "default": "./dist/react-remote-component.modern.mjs"
+  },
+  "main": "./dist/react-remote-component.js",
+  "module": "./dist/react-remote-component.module.mjs",
+  "unpkg": "./dist/react-remote-component.umd.js",
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "dist": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -r lib & microbundle --jsx React.createElement --sourcemap=false --globals react=React,react-dom=ReactDom,@microfe/remote-cjs-module-loader=remoteCjsModuleLoader",
+    "dev": "microbundle watch",
+    "lint": "eslint . --max-warnings 0",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@microfe/remote-cjs-module-loader": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.53",
+    "@repo/eslint-config": "workspace:*",
+    "eslint": "^8.57.0",
+    "@repo/typescript-config": "workspace:*",
+    "typescript": "^5.3.3",
+    "microbundle": "^0.15.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
