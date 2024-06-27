@@ -1,6 +1,6 @@
 {
   "name": "@microfe/react-remote-component",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "通过一个cdn的url(commonjs)，将远程react组件异步加载出来.",
   "sideEffects": false,
   "keywords": [
