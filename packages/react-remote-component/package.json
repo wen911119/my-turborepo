@@ -1,6 +1,6 @@
 {
-  "name": "@microfe.top/react-remote-component",
-  "version": "1.0.0",
+  "name": "@microfe.top/test_package2",
+  "version": "0.0.0",
   "description": "通过一个cdn的url(commonjs)，将远程react组件异步加载出来.",
   "sideEffects": false,
   "keywords": [
@@ -29,13 +29,13 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -r dist & microbundle --jsx React.createElement --sourcemap=false --globals react=React,react-dom=ReactDom,@microfe.top/remote-cjs-module-loader=remoteCjsModuleLoader",
+    "build": "rm -r dist & microbundle --jsx React.createElement --sourcemap=false --globals react=React,react-dom=ReactDom,@microfe.top/test_package1=remoteCjsModuleLoader",
     "dev": "microbundle watch",
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    "@microfe.top/remote-cjs-module-loader": "workspace:*"
+    "@microfe.top/test_package1": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18.2.0"

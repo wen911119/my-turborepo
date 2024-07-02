@@ -2,7 +2,7 @@ import React, { type FC, Suspense, type ReactNode, lazy, useRef, Fragment } from
 import {
   RemoteCjsModuleLoader as loader,
   type RemoteCjsModuleLoaderParam,
-} from "@microfe.top/remote-cjs-module-loader";
+} from "@microfe.top/test_package1";
 
 export interface RemoteComponentProps extends RemoteCjsModuleLoaderParam {
   loadingComponent?: ReactNode;
