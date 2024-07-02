@@ -90,7 +90,7 @@ importers:
 
   packages/react-remote-component:
     dependencies:
-      '@microfe/remote-cjs-module-loader':
+      '@microfe.top/remote-cjs-module-loader':
         specifier: workspace:*
         version: link:../remote-cjs-module-loader
       react:
