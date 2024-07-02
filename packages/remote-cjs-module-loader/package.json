@@ -1,6 +1,6 @@
 {
   "name": "@microfe.top/test_package1",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "将远程commonjs的模块拉取到本地变成esModule.",
   "sideEffects": false,
   "keywords": [
