@@ -29,15 +29,8 @@ jobs:
       - name: Setup npmrc
         run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
-      - name: Publish dev verison
-        id: changesets
-        uses: changesets/action@v1
-        with:
-          publish: pnpm release:dev
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Publish dev verison locally
+        run: pnpm release:dev
 
       # - name: Send a Slack notification if a publish happens
         # if: steps.changesets.outputs.published == 'true'
