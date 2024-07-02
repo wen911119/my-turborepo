@@ -1,6 +1,0 @@
----
-"@microfe.top/react-remote-component": major
-"@microfe.top/remote-cjs-module-loader": major
----
-
-v1.0
