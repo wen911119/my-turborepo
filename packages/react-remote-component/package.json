@@ -29,7 +29,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -r lib & microbundle --jsx React.createElement --sourcemap=false --globals react=React,react-dom=ReactDom,@microfe.top/remote-cjs-module-loader=remoteCjsModuleLoader",
+    "build": "rm -r dist & microbundle --jsx React.createElement --sourcemap=false --globals react=React,react-dom=ReactDom,@microfe.top/remote-cjs-module-loader=remoteCjsModuleLoader",
     "dev": "microbundle watch",
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
