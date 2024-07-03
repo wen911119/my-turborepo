@@ -1,5 +1,12 @@
 # @microfe.top/test_package2
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [c937343]
+  - @microfe.top/test_package1@0.0.2
+
 ## 0.0.1
 
 ### Patch Changes
