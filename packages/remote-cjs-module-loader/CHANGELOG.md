@@ -1,5 +1,11 @@
 # @microfe.top/test_package1
 
+## 0.0.3
+
+### Patch Changes
+
+- f93fe03: test ci3
+
 ## 0.0.2
 
 ### Patch Changes
