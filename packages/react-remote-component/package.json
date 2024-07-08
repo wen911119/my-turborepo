@@ -1,6 +1,6 @@
 {
   "name": "@microfe.top/test_package2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "通过一个cdn的url(commonjs)，将远程react组件异步加载出来.",
   "sideEffects": false,
   "keywords": [

@@ -1,5 +1,11 @@
 # @microfe.top/test_package2
 
+## 0.0.4
+
+### Patch Changes
+
+- 4afee88: feat: update ci for test
+
 ## 0.0.3
 
 ### Patch Changes
